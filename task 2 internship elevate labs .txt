@@ -1,0 +1,93 @@
+﻿Task 2: Analyze a Phishing Email Sample.
+
+
+Objective: Identify phishing characteristics in a suspicious email sample.
+
+
+Tools: Email client or saved email file (text), free online header     analyzer.
+
+
+Deliverables: A report listing phishing indicators found
+
+
+Phishing Email Analysis Report — Citibank Suspicious Activity Scam
+1. Email Sample :    
+
+
+2. Examination of Sender’s Email Address (Spoofing)
+* Displayed sender: Bank Support@Citibanksecuremygateway.com
+
+* Suspicious points:
+
+   * The domain Citibanksecuremygateway.com is not an official Citibank domain.
+
+   * Legitimate Citibank emails come from addresses ending in @citi.com or @citibank.com.
+
+   * The attacker uses a lookalike domain to trick the recipient.
+
+
+3. Email Header Analysis using MX toolBox
+
+
+Discrepancies found:
+
+
+Message ID: <020202a9871bc2df-bb23d5c7-9a88-4df4-b2a1-e9f3b7123456@citibanksecuremygateway.com>
+Created at: Fri, Aug 9, 2025 at 10:42 AM (Delivered after 3 seconds)
+From: Bank <Support@Citibanksecuremygateway.com>
+To: victim@example.com
+Subject: Suspicious Activity
+SPF: FAIL with IP 185.213.209.66 Learn more
+DKIM: 'FAIL' with domain citibanksecuremygateway.com Learn more
+DMARC: 'FAIL' Learn more
+
+
+
+
+ 4. Suspicious Links or Attachments
+      * Link displayed: https://secure.citibank-verification.com
+
+      * This is a spoofed domain — real Citibank links use citi.com.
+
+      * “verification.com” is unrelated and likely hosts a fake login page.
+
+      * No attachment in this case, but the link is malicious.
+
+
+5. Urgent or Threatening Language
+         * Subject: Suspicious Activity — creates fear.
+
+         * Body: “We’ve identified suspicious activity on your account…” — this pushes urgency to act immediately.
+
+6. Mismatched URLs
+            * Visible URL: citibank-verification.com (fake domain).
+
+            * Real Citibank secure login: https://online.citi.com/.
+
+            * Hovering over the link would confirm mismatch.
+
+
+7. Spelling or Grammar Errors
+               * The email is short and clean but overly simplistic for a bank’s security message.
+
+               * Professional banking emails usually contain legal disclaimers, contact numbers, and a customer name.
+
+
+8. Summary of Phishing Traits
+                  * Spoofed sender address using a fake Citibank domain.
+
+                  * Urgent, fear-based subject line.
+
+                  * Suspicious, mismatched URL.
+
+                  * Minimal content with no personalization.
+
+                  * Missing official branding elements like legal disclaimers.
+
+
+
+
+
+ COMPLETED BY  : SYED MUJAHED ALI 
+ INTERNSHIP BATCH FROM : AUGUST 1
+ TASK :2
